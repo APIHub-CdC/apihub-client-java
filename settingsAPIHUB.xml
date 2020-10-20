@@ -1,0 +1,57 @@
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
+                          https://maven.apache.org/xsd/settings-1.0.0.xsd">
+  <activeProfiles>
+    <activeProfile>github</activeProfile>
+  </activeProfiles>
+  <profiles>
+    <profile>
+      <id>github</id>
+      <repositories>
+        <repository>
+          <id>signature-manager-java</id>
+          <name>GitHub APIHub-CdC Apache Maven Packages</name>
+          <url>https://maven.pkg.github.com/APIHub-CdC/signature-manager-java</url>
+        </repository>      
+        <repository>
+          <id>rcc-ficoscore-pld-client-java</id>
+          <name>GitHub APIHub-CdC Apache Maven Packages</name>
+          <url>https://maven.pkg.github.com/APIHub-CdC/rcc-ficoscore-pld-client-java</url>
+        </repository>
+        <repository>
+          <id>rcc-client-java</id>
+          <name>GitHub APIHub-CdC Apache Maven Packages</name>
+          <url>https://maven.pkg.github.com/APIHub-CdC/rcc-client-java</url>
+        </repository>
+        <repository>
+          <id>ficoscore-client-java</id>
+          <name>GitHub APIHub-CdC Apache Maven Packages</name>
+          <url>https://maven.pkg.github.com/APIHub-CdC/ficoscore-client-java</url>
+        </repository>                
+      </repositories>      
+    </profile>
+  </profiles>
+  <servers>
+    <server>
+      <id>rcc-ficoscore-pld-client-java</id>
+      <username>${GITHUB_ACTOR}</username>
+      <password>${GITHUB_TOKEN}</password>
+    </server>    
+    <server>
+      <id>signature-manager-java</id>
+      <username>${GITHUB_ACTOR}</username>
+      <password>${GITHUB_TOKEN}</password>
+    </server>  
+    <server>
+      <id>rcc-client-java</id>
+      <username>${GITHUB_ACTOR}</username>
+      <password>${GITHUB_TOKEN}</password>
+    </server>
+    <server>
+      <id>ficoscore-client-java</id>
+      <username>${GITHUB_ACTOR}</username>
+      <password>${GITHUB_TOKEN}</password>
+    </server>        
+  </servers>  
+</settings>
