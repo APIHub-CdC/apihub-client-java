@@ -28,6 +28,11 @@
           <id>ficoscore-client-java</id>
           <name>GitHub APIHub-CdC Apache Maven Packages</name>
           <url>https://maven.pkg.github.com/APIHub-CdC/ficoscore-client-java</url>
+        </repository> 
+        <repository>
+          <id>apihub-client-java</id>
+          <name>GitHub APIHub-CdC Apache Maven Packages</name>
+          <url>https://maven.pkg.github.com/APIHub-CdC/apihub-client-java</url>
         </repository>                
       </repositories>      
     </profile>
@@ -52,6 +57,11 @@
       <id>ficoscore-client-java</id>
       <username>${GITHUB_ACTOR}</username>
       <password>${GITHUB_TOKEN}</password>
-    </server>        
+    </server>  
+    <server>
+      <id>apihub-client-java</id>
+      <username>${GITHUB_ACTOR}</username>
+      <password>${GITHUB_TOKEN}</password>
+    </server>            
   </servers>  
 </settings>
