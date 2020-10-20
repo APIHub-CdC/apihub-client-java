@@ -6,7 +6,7 @@
 	<artifactId>apihub-client-java</artifactId>
 	<packaging>jar</packaging>
 	<name>apihub-client-java</name>
-	<version>1.0.1-SNAPSHOT</version>
+	<version>1.0.0-SNAPSHOT</version>
 
 	<distributionManagement>
 		<repository>
